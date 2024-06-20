@@ -1,7 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import { Section } from "./Section"
-import Image from "next/image"
-import imgProfile from './images/slackphoto2.jpg'
 import { Code } from "./Code"
 
 export const Hero = () => {
@@ -37,7 +35,7 @@ export const Hero = () => {
 			</p>
 		</div>
 		<div className="flex-[2] max-md:m-auto ml-auto">
-			<Image src={imgProfile}
+			<img src='./images/slackphoto2.webp'
 				className="w-full h-auto rounded-full max-w-xs max-md:w-56"
 				alt="Olivier picture" />
 		</div>

@@ -1,10 +1,9 @@
-import Image, { StaticImageData } from "next/image"
-import Link from "next/link"
+/* eslint-disable @next/next/no-img-element */
 import { Badge } from "@/components/ui/badge"
 
 
 export type WorkProps = {
-    image: StaticImageData | string,
+    image: string,
     title: string,
     role: string,
     date: string,
@@ -16,7 +15,7 @@ export const WorkProject = (props: WorkProps) => {
     return (
         <div
             className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
-            <Image
+            <img
                 src={props.image}
                 alt={props.title}
                 className="w-10 h-10 object-contain rounded-md" />

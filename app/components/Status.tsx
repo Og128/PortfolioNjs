@@ -1,11 +1,6 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
 import { AppWindow, BookA, Home, LayoutList} from "lucide-react"
-import imgProfile from './images/slackphoto2.jpg'
-import imgUpwork from './images/upwork.png'
-import imgMalt from './images/malt.png'
-import imgSom from './images/Somtam.png'
-import imgEngin from './images/engin.webp'
 import { SideProject, SideProjectProps } from "./SideProject"
 import { WorkProject, WorkProps } from "./WorkProject"
 import { ContactCard } from "./ContactCard"
@@ -51,14 +46,14 @@ export const Status = () => {
                     </p>
                     <ContactCard
                         name="@UpWork"
-                        image={imgProfile}
-                        mediumImage={imgUpwork}
+                        image='./images/slackphoto2.webp'
+                        mediumImage='./images/upwork.png'
                         description="My upwork page"
                         url='https://www.upwork.com/freelancers/~01fccdf2b1b1f03219?mp_source=share' />
                     <ContactCard
                         name="Olivier Gautheron"
-                        image={imgProfile}
-                        mediumImage={imgMalt}
+                        image='./images/slackphoto2.webp'
+                        mediumImage='./images/malt.png'
                         description="My Malt page"
                         url='https://www.malt.fr/profile/oliviergautheron?' />
                 </Card>
@@ -96,7 +91,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
 const WORKS: WorkProps[] =
     [
         {
-            image: imgProfile,
+            image: './images/slackphoto2.webp',
             title: "Freelance",
             role: 'Software developer',
             date: '2023-Now',
@@ -104,7 +99,7 @@ const WORKS: WorkProps[] =
             freelance: true
         },
         {
-            image: imgEngin,
+            image: './images/engin.webp',
             title: "EnginHero",
             role: 'Project manager',
             date: 'Jan.2024-May.2024',
@@ -112,7 +107,7 @@ const WORKS: WorkProps[] =
             freelance: false
         },
         {
-            image: imgSom,
+            image: './images/Somtam.png',
             title: "SomTamLabs",
             role: 'Front-end Developer',
             date: 'Nov.2023-Feb.2024',
