@@ -6,11 +6,12 @@ import { Code } from "./Code"
 
 export const Hero = () => {
 	return <Section className="flex max-lg:flex-col items-start gap-4">
-		<div className="flex-[3] w-full flex-col gap-2">
+		<div className="flex-[3] w-full flex-col">
 			<h2 className="font-bold font-caption text-5xl text-primary">Olivier Gautheron</h2>
-			<h3 className="text-3xl font-caption">Software developer</h3>
-			<p className="text-base">
-				Welcome to my portfolio ! <br />
+			<h3 className="text-3xl font-caption mt-6">Software Developer</h3>
+			<p className="text-base mt-6">
+				Welcome to my portfolio !</p>
+			<p className="text-base mt-3">
 				I am
 				<Code className="inline-flex items-center gap-1">
 					<img
@@ -19,7 +20,8 @@ export const Hero = () => {
 						style={{ width: 16, height: "16" }} />
 					French
 				</Code>
-				full-stack web developer.  <br />
+				full-stack web developer,  </p>
+			<p className="text-base mt-1">
 				Currently living in
 				<Code className="inline-flex items-center gap-1">
 					<img
@@ -29,6 +31,9 @@ export const Hero = () => {
 					Bangkok
 				</Code>
 				.
+			</p>
+			<p className="text-base mt-1">
+				Eager for work opportunities as a freelancer, <br />launching my way into full-time work.
 			</p>
 		</div>
 		<div className="flex-[2] max-md:m-auto ml-auto">

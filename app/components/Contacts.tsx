@@ -2,9 +2,9 @@ import { Badge } from '@/components/ui/badge'
 import { Section } from './Section'
 import { ContactCard } from './ContactCard'
 import imgProfile from './images/slackphoto2.jpg'
-import imgTwitter from './images/twitter_image.jpg'
 import imgLinked from './images/linked_image.png'
 import imgMail from './images/mail_image.webp'
+import imgWhats from './images/whats.jpg'
 
 export const Contacts = () => {
     return (
@@ -18,14 +18,20 @@ export const Contacts = () => {
                     name="@LinkedIn"
                     image={imgProfile}
                     mediumImage={imgLinked}
-                    description="Profil linkedIn"
+                    description="Connect with me"
                     url='https://www.linkedin.com/in/olivier-gautheron-og/' />
                 <ContactCard
-                    name="@Gmail"
+                    name="@Mail"
                     image={imgProfile}
                     mediumImage={imgMail}
-                    description="gautheron.og@gmail.com"
+                    description="Email me your work offer !"
                     url='mailto:gautheron.og@gmail.com' />
+                <ContactCard
+                    name="@Whatsapp"
+                    image={imgProfile}
+                    mediumImage={imgWhats}
+                    description="Always available"
+                    url='https://wa.me/+33623306587' />
             </div>
 
         </Section>

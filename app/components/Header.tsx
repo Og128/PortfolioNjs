@@ -2,16 +2,16 @@ import React from 'react'
 import { Section } from './Section'
 import { buttonVariants } from '@/components/ui/button'
 import Githubicon from './icons/Githubicon'
-import Twittericon from './icons/Twitter'
+import WhatsIcon from './icons/WhatsIcon'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
 import Linkedicon from './icons/LinkedIn'
 
 export const Header = () => {
 	return (
-		<header className='sticky top-0 py-4'>
+		<header className='sticky top-0 py-4 bg-background'>
 			<Section className="flex items-baseline">
-				<h1 className='text-lg font-bold text-primary'>Oliviergautheron.fr</h1>
+				<h1 className='text-lg font-bold text-primary'>OlivierGautheron.com</h1>
 				<div className="flex-1"></div>
 				<ul className='flex items-center gap-2'>
 					<Link
@@ -20,9 +20,9 @@ export const Header = () => {
 						<Githubicon size={12} className='text-foreground' />
 					</Link>
 					<Link
-						href='https://x.com/og128'
+						href='https://wa.me/+33623306587'
 						className={cn(buttonVariants({ variant: 'outline' }), "size-6 p-0")}>
-						<Twittericon size={12} className='text-foreground' />
+						<WhatsIcon size={12} className='text-foreground' />
 					</Link>
 					<Link
 						href='https://www.linkedin.com/in/olivier-gautheron-og/'

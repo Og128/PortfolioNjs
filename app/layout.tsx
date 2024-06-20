@@ -13,7 +13,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Olivier Gautheron",
-  description: "Freelance, web Dev",
+  description: "Software developer, front-end and back-end developer, based in Bangkok, Thailand hungry to work on new projects ( and PadThai too ).",
+  icons: { icon: ['./og_logo.png'] }
 };
 
 export default function RootLayout({

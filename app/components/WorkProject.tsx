@@ -1,4 +1,4 @@
-import Image, { StaticImageData }  from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 
@@ -14,8 +14,7 @@ export type WorkProps = {
 
 export const WorkProject = (props: WorkProps) => {
     return (
-        <Link
-            href={props.url}
+        <div
             className="inline-flex items-center gap-4 hover:bg-accent/50 transition-colors p-1 rounded">
             <Image
                 src={props.image}
@@ -35,5 +34,5 @@ export const WorkProject = (props: WorkProps) => {
                     {props.date}
                 </p>
             </div>
-        </Link>)
+        </div>)
 }

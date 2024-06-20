@@ -1,9 +1,11 @@
 import { Card } from "@/components/ui/card"
 import { Section } from "./Section"
-import { Carrot, Code, Square } from "lucide-react"
+import { AppWindow, BookA, Home, LayoutList} from "lucide-react"
 import imgProfile from './images/slackphoto2.jpg'
-import imgTwitter from './images/twitter_image.jpg'
-import imgLinked from './images/linked_image.png'
+import imgUpwork from './images/upwork.png'
+import imgMalt from './images/malt.png'
+import imgSom from './images/Somtam.png'
+import imgEngin from './images/engin.webp'
 import { SideProject, SideProjectProps } from "./SideProject"
 import { WorkProject, WorkProps } from "./WorkProject"
 import { ContactCard } from "./ContactCard"
@@ -15,7 +17,7 @@ export const Status = () => {
             <div className="flex-[3] w-full">
                 <Card className="w-full p-4 flex flex-col gap-2 ">
                     <p className="text-lg text-muted-foreground">
-                        Side, fun projects.
+                        Project, work and training
                     </p>
                     <div className="flex flex-col gap-4">
                         {SIDE_PROJECTS.map((project, index) => (
@@ -24,7 +26,7 @@ export const Status = () => {
                                 Logo={project.Logo}
                                 title={project.title}
                                 description={project.description}
-                                url='/'
+                                url={project.url}
                             />
                         ))}
                     </div>
@@ -45,20 +47,20 @@ export const Status = () => {
                     </div></Card>
                 <Card className="p-4 flex-1 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">
-                        Contact me
+                        Work with me !
                     </p>
                     <ContactCard
-                        name="@og128"
+                        name="@UpWork"
                         image={imgProfile}
-                        mediumImage={imgTwitter}
-                        description="C'est moi !"
-                        url='https://x.com/og128' />
+                        mediumImage={imgUpwork}
+                        description="My upwork page"
+                        url='https://www.upwork.com/freelancers/~01fccdf2b1b1f03219?mp_source=share' />
                     <ContactCard
                         name="Olivier Gautheron"
                         image={imgProfile}
-                        mediumImage={imgLinked}
-                        description="C'est moi !"
-                        url='https://www.linkedin.com/in/olivier-gautheron-og/' />
+                        mediumImage={imgMalt}
+                        description="My Malt page"
+                        url='https://www.malt.fr/profile/oliviergautheron?' />
                 </Card>
             </div>
         </Section>)
@@ -66,35 +68,29 @@ export const Status = () => {
 
 const SIDE_PROJECTS: SideProjectProps[] = [
     {
-        Logo: Code,
-        title: "Bonjour dans le monde des douzes",
-        description: 'Il était une fois, douze oeuf.',
-        url: 'google.com'
+        Logo: AppWindow,
+        title: "David Rodriguez Studio",
+        description: 'Explore his captivating artworks and exhibition',
+        url: 'https://davidrodriguez.studio'
     },
     {
-        Logo: Carrot,
-        title: "Bonsoir",
-        description: 'Test 2',
-        url: 'google.com'
+        Logo: LayoutList,
+        title: "Task Manager",
+        description: 'Application to learn Laravel with React',
+        url: 'https://github.com/Og128/React-Laravel'
     },
     {
-        Logo: Carrot,
-        title: "Bonsoir",
-        description: 'Test 2',
-        url: 'google.com'
+        Logo: BookA,
+        title: "Book website",
+        description: 'Student project to learn back-end development',
+        url: 'https://github.com/Og128/Projet_7_NodeJs'
     },
     {
-        Logo: Carrot,
-        title: "Bonsoir",
-        description: 'Test 2',
-        url: 'google.com'
+        Logo: Home,
+        title: "AirBnb style website",
+        description: 'Student project to learn Reactjs and Sass',
+        url: 'https://github.com/Og128/Projet_6_ReactJs'
     },
-    {
-        Logo: Square,
-        title: 'Bonne nuit',
-        description: 'Test 3',
-        url: 'google.com'
-    }
 ]
 
 const WORKS: WorkProps[] =
@@ -108,7 +104,7 @@ const WORKS: WorkProps[] =
             freelance: true
         },
         {
-            image: imgProfile,
+            image: imgEngin,
             title: "EnginHero",
             role: 'Project manager',
             date: 'Jan.2024-May.2024',
@@ -116,7 +112,7 @@ const WORKS: WorkProps[] =
             freelance: false
         },
         {
-            image: imgProfile,
+            image: imgSom,
             title: "SomTamLabs",
             role: 'Front-end Developer',
             date: 'Nov.2023-Feb.2024',

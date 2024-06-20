@@ -12,12 +12,12 @@ export default function NextIcon(props: ComponentPropsWithoutRef<"svg"> & { size
             <defs>
                 <circle id="path-1" cx="128" cy="128" r="128" />
                 <linearGradient x1="55.6325605%" y1="56.3850422%" x2="83.2279093%" y2="96.0801119%" id="nextjsLinearGradient-3">
-                    <stop stop-color="currentColor" offset="0%" />
-                    <stop stop-color="currentColor" stop-opacity="0" offset="100%" />
+                    <stop stopColor="currentColor" offset="0%" />
+                    <stop stopColor="currentColor" stopOpacity="0" offset="100%" />
                 </linearGradient>
                 <linearGradient x1="50%" y1="0%" x2="49.9534722%" y2="73.4375%" id="nextjsLinearGradient-4">
-                    <stop stop-color="currentColor" offset="0%" />
-                    <stop stop-color="currentColor" stop-opacity="0" offset="100%" />
+                    <stop stopColor="currentColor" offset="0%" />
+                    <stop stopColor="currentColor" stopOpacity="0" offset="100%" />
                 </linearGradient>
             </defs>
             <g>
