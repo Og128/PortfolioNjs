@@ -65,25 +65,25 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     {
         Logo: AppWindow,
         title: "David Rodriguez Studio",
-        description: 'Explore his captivating artworks and exhibition',
+        description: 'React - Framer motion',
         url: 'https://davidrodriguez.studio'
     },
     {
         Logo: LayoutList,
         title: "Task Manager",
-        description: 'Application to learn Laravel with React',
+        description: 'Laravel - React - Inertia - Tailwind',
         url: 'https://github.com/Og128/React-Laravel'
     },
     {
         Logo: BookA,
         title: "Book website",
-        description: 'Student project to learn back-end development',
+        description: 'NodeJs - ExpressJs - MongoDB',
         url: 'https://github.com/Og128/Projet_7_NodeJs'
     },
     {
         Logo: Home,
         title: "AirBnb style website",
-        description: 'Student project to learn Reactjs and Sass',
+        description: 'React - Sass',
         url: 'https://github.com/Og128/Projet_6_ReactJs'
     },
 ]
