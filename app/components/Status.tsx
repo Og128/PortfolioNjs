@@ -12,7 +12,7 @@ export const Status = () => {
             <div className="flex-[3] w-full">
                 <Card className="w-full p-4 flex flex-col gap-2 ">
                     <p className="text-lg text-muted-foreground">
-                        Project, work and training
+                        Projet, Travail, Entraînement
                     </p>
                     <div className="flex flex-col gap-4">
                         {SIDE_PROJECTS.map((project, index) => (
@@ -30,7 +30,7 @@ export const Status = () => {
             <div className="flex-[2] flex flex-col gap-4 w-full">
                 <Card className="p-4 flex-1 ">
                     <p className="text-lg text-muted-foreground">
-                        Works
+                        Travail
                     </p>
                     <div className="flex flex-col gap-4">
                         {WORKS.map((work, index) => (
@@ -42,7 +42,7 @@ export const Status = () => {
                     </div></Card>
                 <Card className="p-4 flex-1 flex flex-col gap-2">
                     <p className="text-lg text-muted-foreground">
-                        Work with me !
+                        Travaillez avec moi !
                     </p>
                     <ContactCard
                         name="@UpWork"
@@ -76,7 +76,7 @@ const SIDE_PROJECTS: SideProjectProps[] = [
     },
     {
         Logo: BookA,
-        title: "Book website",
+        title: "Site de livre",
         description: 'NodeJs - ExpressJs - MongoDB',
         url: 'https://github.com/Og128/Projet_7_NodeJs'
     },
@@ -93,8 +93,8 @@ const WORKS: WorkProps[] =
         {
             image: './images/slackphoto2.webp',
             title: "Freelance",
-            role: 'Software developer',
-            date: '2023-Now',
+            role: 'Développeur full-stack',
+            date: '2023-Maintenant',
             url: 'google.com',
             freelance: true
         },
@@ -102,7 +102,7 @@ const WORKS: WorkProps[] =
             image: './images/engin.webp',
             title: "EnginHero",
             role: 'Project manager',
-            date: 'Jan.2024-May.2024',
+            date: 'Jan.2024-Maintenant',
             url: 'google.com',
             freelance: false
         },

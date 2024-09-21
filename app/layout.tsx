@@ -13,7 +13,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Olivier Gautheron",
-  description: "Software developer, front-end and back-end developer, based in Bangkok, Thailand hungry to work on new projects ( and PadThai too ).",
+  description: "Développeur web basé dans le sud de la France soucieux du détails et à la rage de vivre, tavu",
   icons: { icon: ['./images/og_logo.png'] }
 };
 

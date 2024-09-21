@@ -7,7 +7,7 @@ export const Contacts = () => {
         <Section className='flex flex-col gap-4 items-start'>
             <Badge variant={'outline'}>Contacts</Badge>
             <h2 className=" pb-2 text-3xl font-semibold tracking-tight first:mt-0">
-                You can contact me here !
+                Vous pouvez me contacter ici
             </h2>
             <div className='flex max-md:flex-col gap-4 w-full'>
                 <ContactCard
@@ -16,12 +16,12 @@ export const Contacts = () => {
                     mediumImage='./images/linked_image.png'
                     description="Connect with me"
                     url='https://www.linkedin.com/in/olivier-gautheron-og/' />
-                <ContactCard
+                {/* <ContactCard
                     name="@Mail"
                     image='./images/slackphoto2.webp'
                     mediumImage='./images/mail_image.webp'
                     description="Email me your work offer !"
-                    url='mailto:gautheron.og@gmail.com' />
+                    url='mailto:gautheron&#46;og&#64;gmail&#46;com' /> */}
                 <ContactCard
                     name="@Whatsapp"
                     image='./images/slackphoto2.webp'
